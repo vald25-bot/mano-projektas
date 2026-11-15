@@ -1,0 +1,346 @@
+
+/* BENDRI NUSTATYMAI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #faf8f4;
+    color: #222;
+}
+
+/* VIRŠUTINĖ JUOSTA */
+.top-bar {
+    background: #b99a5b;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+/* ANTRAŠTĖ */
+header {
+    background: #111;
+    color: white;
+    min-height: 110px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #d5b46d;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    font-size: 25px;
+}
+
+.logo strong {
+    font-size: 21px;
+}
+
+.logo small {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    margin-top: 7px;
+    letter-spacing: 2px;
+    color: #eee;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a,
+.cart-link {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+.cart-link:hover {
+    color: #d5b46d;
+}
+
+/* PAGRINDINIS VAIZDAS */
+
+.hero {
+    min-height: 750px;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.35), rgba(0,0,0,0.05)),
+        url('images/foto1.png') center center / contain no-repeat;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 50px 3%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.eyebrow {
+    color: #d5b46d;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+    font-weight: normal;
+}
+
+.hero-content > p:not(.eyebrow) {
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.gold-button {
+    display: inline-block;
+    background: #b99a5b;
+    color: #111;
+    padding: 16px 30px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.gold-button:hover {
+    background: white;
+}
+
+/* KATEGORIJOS */
+.categories,
+.products {
+    padding: 85px 7%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #888;
+    font-family: Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.category-card {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+}
+
+.category-card span {
+    background: rgba(0,0,0,0.75);
+    color: #d5b46d;
+    padding: 15px 25px;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.women {
+    background-image: linear-gradient(#0002,#0004),
+    url('images/foto5.jpg');
+}
+
+.men {
+    background-image: linear-gradient(#0002,#0004),
+    url('images/foto6.jpg');
+}
+
+.niche {
+    background-image: linear-gradient(#0002,#0004),
+    url('images/foto7.jpg');
+}
+
+/* PREKĖS */
+.products {
+    background: #f0ede7;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.product-card {
+    background: white;
+    padding: 18px 18px 25px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px #0001;
+}
+
+.product-image {
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.product-one {
+    background-image: url('images/foto8.jpg');
+}
+
+.product-two {
+    background-image: url('images/foto9.jpg');
+}
+
+.product-three {
+    background-image: url('images/foto10.jpg');
+}
+
+.product-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #888;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.product-card strong {
+    display: block;
+    color: #a48649;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 13px;
+    background: #171717;
+    color: #d5b46d;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background: #b99a5b;
+    color: #111;
+}
+
+/* APIE MUS */
+.about {
+    padding: 85px 10%;
+    text-align: center;
+    background: #fff;
+}
+
+.about h2 {
+    color: #a48649;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.9;
+    color: #777;
+    font-family: Arial, sans-serif;
+}
+
+/* APAČIA */
+footer {
+    background: #111;
+    color: #ddd;
+    text-align: center;
+    padding: 50px 20px;
+    line-height: 2;
+    font-family: Arial, sans-serif;
+}
+
+footer h2 {
+    color: #d5b46d;
+    font-family: Georgia, serif;
+}
+
+/* TELEFONAI */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 50px 7%;
+    }
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        height: 300px;
+    }
+
+    .categories,
+    .products {
+        padding: 60px 6%;
+    }
+}

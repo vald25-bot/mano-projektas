@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KRISTINA ONE PLUS – grožis, kvapai ir stilius. Atrask savo išskirtinį aromatą.">
+    <title>KRISTINA LIVE ONE PLUS – Grožis, kvapai ir stilius</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- VIRŠUTINĖ JUOSTA -->
+    <div class="top-bar">
+        GROŽIS • KVAPAI • STILIUS
+    </div>
+
+    <!-- PUSLAPIO ANTRAŠTĖ -->
+    <header>
+        <div class="logo">
+            <span>KRISTINA</span>
+            <strong>LIVE ONE PLUS</strong>
+            <small>GROŽIS, KVAPAI IR STILIUS</small>
+        </div>
+
+        <nav>
+            <a href="#pradzia">Pradžia</a>
+            <a href="#moterims">Moterims</a>
+            <a href="#vyrams">Vyrams</a>
+            <a href="#nisiniai">Nišiniai</a>
+            <a href="#kontaktai">Kontaktai</a>
+        </nav>
+
+        <a href="#prekes" class="cart-link">
+            Krepšelis (<span id="cart-count">0</span>)
+        </a>
+    </header>
+
+    <!-- PAGRINDINIS VAIZDAS -->
+    <main>
+    <section class="hero" id="pradzia">
+    <div class="hero-content">
+    <p class="eyebrow">IŠSKIRTINIAMS SKONIAMS</p>
+    <h1>Atrask savo<br>unikalų aromatą</h1>
+    <p>
+    Pasaulis pilnas kvapų. Atrask tą,
+    kuris geriausiai atspindi TAVE.
+    </p>
+    <a href="#prekes" class="gold-button">
+    ATRASTI KVAPUS
+    </a>
+    </div>
+    </section>
+
+        <!-- KATEGORIJOS -->
+        <section class="categories">
+            <h2>Mūsų kolekcijos</h2>
+            <p class="section-description">
+                Kvapai kiekvienai asmenybei ir progai
+            </p>
+
+            <div class="category-grid">
+                <a href="#moterims" class="category-card women">
+                    <span>011 Peccati offattivi laura</span>
+                </a>
+
+                <a href="#vyrams" class="category-card men">
+                    <span>109</span>
+                </a>
+
+                <a href="#nisiniai" class="category-card niche">
+                    <span>302</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- PREKIŲ KATALOGAS -->
+        <section class="products" id="prekes">
+            <h2>Populiariausi kvapai</h2>
+            <p class="section-description">
+                Atrask savo naują mėgstamiausią aromatą
+            </p>
+
+            <div class="product-grid">
+
+                <article class="product-card" id="moterims">
+                    <div class="product-image product-one"></div>
+                    <h3>Live On Plus Peccati Olfattivi Proibita 401 ELIXIR 30 ml PARFUM</h3>
+                    <p>Moteriškas aromatas</p>
+                    <strong>49,00 €</strong>
+                    <button onclick="addToCart()">Į krepšelį</button>
+                </article>
+
+                <article class="product-card" id="vyrams">
+                    <div class="product-image product-two"></div>
+                    <h3>Live On Plus Peccati Olfattivi Paradosso Femminile 119 kvepalai moterims</h3>
+                    <p>Moteriškas aromatas</p>
+                    <strong>55,00 €</strong>
+                    <button onclick="addToCart()">Į krepšelį</button>
+                </article>
+
+                <article class="product-card" id="nisiniai">
+                    <div class="product-image product-three"></div>
+                    <h3>Live On Plus kvepalai 111 Peccati Olfattivi 100 ml</h3>
+                    <p>Moteriškas aromatas</p>
+                    <strong>89,00 €</strong>
+                    <button onclick="addToCart()">Į krepšelį</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- APIE MUS -->
+        <section class="about">
+            <h2>KRISTINA LIVE ONE PLUS</h2>
+            <p>
+                Grožis slypi detalėse, o kvapas – tavo asmenybėje.
+                Atrask aromatus, kurie palieka įspūdį.
+            </p>
+        </section>
+    </main>
+
+    <!-- KONTAKTAI -->
+    <footer id="kontaktai">
+        <h2>KRISTINA LIVE ONE PLUS</h2>
+        <p>GROŽIS, KVAPAI IR STILIUS</p>
+   
+        <p>© "City Bumas" Ukmergės g. 26, Panevėžys</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
